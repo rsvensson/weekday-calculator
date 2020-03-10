@@ -13,6 +13,10 @@ namespace weekday_calculator
          *    what weekday the date is.
          * https://en.wikipedia.org/wiki/Doomsday_rule */
 
+        private int year;
+        private int month;
+        private int day;
+        private int anchor;
         private static Dictionary<int, string> weekdays = new Dictionary<int, string>{
             {0, "Sunday"},
             {1, "Monday"},
@@ -36,10 +40,6 @@ namespace weekday_calculator
             {10, new int[] {7, 14, 21, 28}},     // November
             {11, new int[] {5, 12, 19, 26}}      // December
         };
-        private int year;
-        private int month;
-        private int day;
-        private int anchor;
 
         public bool isLeapYear()
         {

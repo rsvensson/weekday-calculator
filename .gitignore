@@ -1,0 +1,5 @@
+.vscode/launch.json
+.vscode/tasks.json
+obj/Debug/netcoreapp3.1/weekday-calculator.AssemblyInfo.cs
+obj/Debug/netcoreapp3.1/weekday-calculator.AssemblyInfoInputs.cache
+obj/Debug/netcoreapp3.1/weekday-calculator.csprojAssemblyReference.cache
