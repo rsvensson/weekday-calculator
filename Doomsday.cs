@@ -119,7 +119,7 @@ namespace weekday_calculator
 
         public string getAnchorDay()
         {
-            return weekdays[anchorDay()];
+            return weekdays[this.anchor];
         }
 
         public string getDoomsDay()
