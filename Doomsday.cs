@@ -41,7 +41,7 @@ namespace weekday_calculator
             {11, new int[] {5, 12, 19, 26}}      // December
         };
 
-        public bool isLeapYear()
+        private bool isLeapYear()
         {
             // Determines if a year is a leap year or not
             if (this.year % 4 != 0) {
