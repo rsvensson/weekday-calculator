@@ -65,10 +65,11 @@ namespace weekday_calculator
                     StringSplitOptions.RemoveEmptyEntries);
 
             try {
-                // Control that the year string is 4 digits long
-                if (strlist[0].Length != 4) {
+                // Make sure we got three numbers and that year is in YYYY format
+                if (strlist.Length < 3 || strlist[0].Length != 4) {
                     throw new System.Exception();
                 }
+
                 // Try parsing the strings to ints
                 this.year = int.Parse(strlist[0]);
                 this.month = int.Parse(strlist[1]);
@@ -78,6 +79,7 @@ namespace weekday_calculator
                 Environment.Exit(-1);
             }
 
+            // Look for invalid dates
             if (this.month == 2 && this.day > (isLeapYear() ? 29 : 28)) {
                 Console.WriteLine($"Day needs to be within range 01-{(isLeapYear() ? 29 : 28)}");
                 Environment.Exit(-1);
